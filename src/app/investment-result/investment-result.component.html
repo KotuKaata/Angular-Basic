@@ -1,0 +1,22 @@
+<p *ngIf="displayDefaultText"> Please enter some values and press "Calculate".</p>
+
+<table *ngIf="IsShowInvestmentResumt">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Investment Value</th>
+            <th>Interest (Year)</th>
+            <th>Total Interest</th>
+            <th>Total Capital</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let result of investmentResult">
+            <td>{{ result.year }} </td>
+            <td>{{ result.valueEndOfYear | currency }} </td>
+            <td>{{ result.interest | currency}} </td>
+            <td>{{ result.totalInterest | currency }} </td>
+            <td>{{ result.totalAmountInvested | currency}} </td>
+        </tr>
+    </tbody>
+</table>
