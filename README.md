@@ -4,6 +4,12 @@
 
 # 
 
+# Install Angular 16 version in local if not exists
+
+# Run `npm install -g angular/cli@16`
+
+# 
+
 # \## Development server
 
 # Run `npm install` to install all packages to run applicaiton
